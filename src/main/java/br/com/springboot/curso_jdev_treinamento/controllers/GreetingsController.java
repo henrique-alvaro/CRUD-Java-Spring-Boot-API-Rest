@@ -18,9 +18,17 @@ public class GreetingsController {
      * @param name the name to greet
      * @return greeting text
      */
-    @RequestMapping(value = "/{name}", method = RequestMethod.GET)
+    @RequestMapping(value = "/mostranome/{name}", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     public String greetingText(@PathVariable String name) {
-        return "Hello " + name + "!";
+        return "Curso Spring Boot API " + name + "!";
     }
+    
+    @RequestMapping(value = "/OlaMundo/{nome}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public String metodoOlaMundo(@PathVariable String nome) {
+    	return "Ola mundo "+ nome;
+    }
+    
+    
 }
