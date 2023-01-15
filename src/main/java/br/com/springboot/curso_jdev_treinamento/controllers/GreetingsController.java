@@ -47,7 +47,7 @@ public class GreetingsController {
     	return "Ola mundo "+ nome;
     }
     
-    @GetMapping(value = "listatodos")
+    @GetMapping(value = "listatodos")/*metodo de API*/
     @ResponseBody /*Retorna os dados para o corpo da resposta*/
     public ResponseEntity<List<Usuario>> listaUsuario(){
     	
