@@ -46,7 +46,21 @@
 			            <label for="nameBusca" class="col-form-label">Informe o nome:</label>
 			            <input type="text" class="form-control" id="nameBusca">
 			          </div>
+			          <button type="button" class="btn btn-success" onclick="pesquisarUser()">Buscar</button>
 			        </form>
+			        <table class="table" id="tabelaresultado">
+						  <thead>
+							    <tr>
+								      <th scope="col">ID</th>
+								      <th scope="col">Nome</th>
+								      <th scope="col">Editar</th>
+							    </tr>
+						  </thead>
+						  
+						  <tbody>
+						  </tbody>
+					</table>
+			        
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
