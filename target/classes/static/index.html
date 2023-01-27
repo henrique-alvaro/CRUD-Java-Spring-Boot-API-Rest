@@ -31,7 +31,30 @@
 		
 		<button type="button" class="btn btn-primary" onclick="salvarUsuario()">Salvar</button>
 		<button type="button" class="btn btn-secondary" onclick="document.getElementById('formCadastroUser').reset();">Novo</button>
-		<button type="button" class="btn btn-secondary" onclick="document.getElementById('formCadastroUser').reset();">Novo</button>
+		<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalPesquisaUser">Pesquisar</button>
+		
+		<div class="modal fade" id="modalPesquisaUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Pesquisa de usuário</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="mb-3">
+			            <label for="nameBusca" class="col-form-label">Informe o nome:</label>
+			            <input type="text" class="form-control" id="nameBusca">
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+			      </div>
+			    </div>
+			  </div>
+		</div>
 		
 		<script src="https://code.jquery.com/jquery-3.6.3.min.js" 
 		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
