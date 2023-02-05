@@ -41,16 +41,6 @@ public class GreetingsController {
         return "Curso Spring Boot API " + name + "!";
     }
     
-    @RequestMapping(value = "/olamundo/{nome}", method = RequestMethod.GET)
-    @ResponseStatus(HttpStatus.OK)
-    public String metodoOlaMundo(@PathVariable String nome) {
-    	
-    	Usuario usuario = new Usuario();
-    	usuario.setNome(nome);
-    	
-    	usuarioRepository.save(usuario);/*Grava no banco de dados*/
-    	return "Ola mundo "+ nome;
-    }
     
     @GetMapping(value = "listatodos")/*metodo de API*/
     @ResponseBody /*Retorna os dados para o corpo da resposta*/
